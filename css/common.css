@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/* 
+全てのhtmlファイルの共通設定
+*/
+
+/* 余白無し・フォント統一 */
+body {
+    margin:0;
+    font-family:'Segoe UI';    
+    caret-color: transparent;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    width:100%;
+}
+
+/* 画像データのコピペ等の禁止 */
+img {
+    user-select: none;
+    -webkit-user-select: none;
+    pointer-events: none;
+}
+
+/* リストの点を消す */
+li {
+    list-style:none;
+}
+
+/* リンクのある<a>タグに下線をつけない */
+a[href] {
+    text-decoration: none;
+}
+
+/* 文字色：白 */
+a, h1, small div{
+    color: white;
+}
+
+/* menuを横並びにする */
+.menu li {
+    display: inline-block;
+}
+
+/* 背景色指定 */
+header, main, footer{
+    background-color: #272721;
+}
+
+/* ヘッダー設定 */
+header {
+    display:flex;
+}
+
+/* メニュー設定：ヘッダー内 */
+.menu {
+    margin-bottom: 0;
+    display: flex;
+}
+
+/* メニュー文字色・フォントサイズ設定 */
+.menu a{
+    color:#22E09C;
+    font-size: 2em;
+}
+
+/* メニュー文字にマウスがホバーした場合 */
+.menu a:hover{
+    color:#1a9d6f;
+}
+
+/* メニューの間隔を設定 */
+.menu li {
+    padding-right: 4em;
+}
+
+/* メニューの画像の大きさ設定 */
+li a img{
+    width: 5em;
+}
+
+/* メイン要素の大きさ */
+main {
+    margin-top: 0.5em;
+    flex: 1;
+}
+
+/* フッター設定 */
+footer {
+    height:3em;
+    margin-top: 0.5em;
+}
+
+/* フッターの文字を右寄せ */
+small,time{
+    float: right;
+}

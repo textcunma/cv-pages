@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/* 
+デモページの設定
+*/
+a[href="./demo.html"], a[href="./demo.html"]:hover {
+    color:#143d1e;
+}
+
+/* ページタイトルの設定 */
+main > a {
+    margin:1em;
+    font-size:3em;
+}
+
+/* テーブルの位置設定 */
+main table {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* テーブル要素を中央寄せ */
+td {
+    text-align: center;
+}
+
+/*　入出力タイトルの文字大きさ設定 */
+.iotitle {
+    font-size:2em;
+}
+
+/* 入出力画面のサイズ設定 */
+.input, .output {
+    height:400px;
+    width: 400px;
+}
+
+/* 入力画面の色設定 */
+.input {
+    background-color: #555547;
+}
+
+/* 入力画面の色設定 */
+.input:hover {
+    background-color: #7e7e6c;
+}
+
+/* 出力画面の色設定 */
+.output {
+    background-color: #313129;
+}
+
+/* ボタンの設定 */
+.btn{
+    font-size:1.2em;
+}
+
+/* ボタンに矢印付与 */
+.btn::after {
+    position: relative;
+    content: '  >';
+    margin-top: -5px;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+
+/* ボタンにホバーした場合の設定 */
+.btn:hover {
+    color:rgba(255, 255, 255, 0.375);
+    cursor:pointer;
+}
+
+/* ボタンの矢印の動きの設定 */
+.btn:hover::after {
+    right: -.1em;
+} 
+
+/* キャンバスの設定 */
+#src_img, #out_img {
+    width:400px;
+}
+
+/* 出力キャンバスは非表示 */
+#out_img {
+    display:none;
+}
+
+/* モーダル設定 */
+.modal {
+    position: absolute;
+    top: 70%;
+    left: 34%;
+    background-color: #7e7e6c;
+    padding: 20px 0 40px;
+    width: 600px;
+    height: auto;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    display: none;
+}
+
+/* モーダルのxボタンの設定 */
+#delete_modal {
+    margin-right:20px;
+    text-align: right;
+}
+
+/* モーダル内のボタンの設定 */
+#cv_btns {
+    display: flex;
+    padding-left:30px;
+	padding-right:30px;
+    justify-content: space-around;
+}
+
+/* 各ボタンの設定 */
+.cv_btn{
+    height:50px;
+    width:100px;
+}

@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* 
+Wikiページの設定
+*/
+a[href="./wiki.html"], a[href="./wiki.html"]:hover {
+     color:#143d1e;
+}
+
+/* ページタイトルの設定 */
+main > a {
+     margin:1em;
+     font-size:3em;
+}
+
+/* 記事の配置位置設定 */
+main > article {
+     margin-left:5em;
+}
+
+/* 記事の色と大きさの設定 */
+.box {
+     background-color: white;
+     height:150px;
+     width:70%;
+     margin-bottom: 2em;
+     padding:1em;
+}
+
+/* 文字色の設定 */
+.box > p {
+     color:#313129;
+}
+
+/* リンクの設定 */
+.box > p > a {
+     color:#28d1da;
+     font-weight: 1000;
+}
+
+/* リンクの設定 */
+.box > p > a:hover {
+     color:#20989e;
+}

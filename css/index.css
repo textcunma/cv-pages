@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* 
+トップページの設定
+*/
+
+/* メイン要素：画像設定 */
+main img {
+    margin-top: 1%;
+    margin-left: 35%;
+    margin-bottom: 3%;
+    width:35em;
+}
+
+/* メイン要素：文字設定 */
+main a{
+    font-size:40px;
+    margin-left: 47%;
+}
+
+main a::after {
+    position: relative;
+    content: '  >';
+    margin-top: -5px;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+
+main a:hover{
+    color:rgba(255, 255, 255, 0.375);
+}
+
+main a:hover::after {
+    right: -.1em;
+} 
+
+span{
+    color:#22E09C;
+    font-size: 1.5em;
+}
+
+/* メイン要素：説明記事設定 */
+article {
+    position:absolute;
+    top:50%;
+    left:70%;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="format-detection" content="telephone=no, address=no, email=no">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0">
+        <title>CV Pages</title>
+        <meta name="description" content="computer vision demo page">
+        <meta property="og:title" content="CV Pages">
+        <meta property="og:description" content="computer vision demo page">
+        <meta property="og:site_name" content="CV Pages">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+        <meta property="og:locale" content="ja_JP">
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@text_cunma">
+        <link rel="icon" type="image/png" href="">
+        <link rel="apple-touch-icon" href="">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/demo.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>    <!-- jQuery読み込み -->
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li><a href="./index.html"><img src="img/title.png" alt="CV Pages Title" id="title"></a>
+                    <li><a href="./demo.html">Demo</a>
+                    <li><a href="./wiki.html">Wiki</a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <a>Demo Page</a>
+            <table>
+                <tr>
+                    <td><a class="iotitle">Input</a>
+                    <td><a class="iotitle">Output</a>
+                <tr>
+                    <td class="input" id="canvas_area">
+                        <a id="src_comment">ここをクリック or ドラッグ&ドロップ</a>
+                        <input type="file" hidden accept="image/jpeg,image/png" id="select_file">
+                        <img id="src_img">
+                    <td class="output">
+                        <a id="out_comment">No image ...</a>
+                        <canvas id="out_img"></canvas>
+                <tr>
+                    <td>
+                        <a class="btn" id="select_cv_btn">処理選択</a>
+                    <td>
+                        <a class="btn" id="run_btn">実行</a>
+            </table>
+
+        </main>
+        <dev class="modal">
+            <div id="delete_modal">
+                <button type="button" id="delete_modal_btn">x</button>
+            </div>
+            <div id="cv_btns">
+                <button class="cv_btn" id="cv_line">エッジ抽出</button>
+                <button class="cv_btn" id="cv_binary">二値化</button>
+                <button class="cv_btn" id="cv_expantion">線膨張</button>
+            </div>
+
+        </dev>
+        <footer>
+            <small>
+                <div>Copyright © 2022 textcunma.</div>
+                <div><time datetime=”2022-8-3” itemprop=”datepublished”>published:2022/8/3</time></div>
+            </small>
+        </footer>
+
+        <script src="https://docs.opencv.org/3.4.1/opencv.js"></script> <!-- Opencv.jsファイル読み込み -->
+        <script src="./js/demo.js"></script>        
+    </body>
+</html>
