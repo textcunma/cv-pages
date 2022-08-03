@@ -1,3 +1,5 @@
+'use strict';
+
 const src_img = document.getElementById('src_img');  //入力画像
 const out_img = document.getElementById('out_img');  //出力画像
 const select_file = document.getElementById('select_file'); //ファイル選択

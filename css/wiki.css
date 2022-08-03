@@ -9,13 +9,15 @@ a[href="./wiki.html"], a[href="./wiki.html"]:hover {
 
 /* ページタイトルの設定 */
 main > a {
-     margin:1em;
+     position:relative;
+     left:1em;
      font-size:3em;
 }
 
 /* 記事の配置位置設定 */
 main > article {
-     margin-left:5em;
+     position:relative;
+     left:5em;
 }
 
 /* 記事の色と大きさの設定 */

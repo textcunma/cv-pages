@@ -6,16 +6,17 @@
 
 /* メイン要素：画像設定 */
 main img {
-    margin-top: 1%;
-    margin-left: 35%;
-    margin-bottom: 3%;
+	position:relative;
+    top: 10%;
+    left: 35%;
     width:35em;
 }
 
 /* メイン要素：文字設定 */
 main a{
+	display:block;
     font-size:40px;
-    margin-left: 47%;
+	margin-left: 47%;
 }
 
 main a::after {
